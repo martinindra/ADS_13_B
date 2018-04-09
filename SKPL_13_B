@@ -1,0 +1,25 @@
+DOKUMEN SPESIFIKASI KEBUTUHAN PERANGKAT LUNAK
+
+1. Pendahuluan
+<Tujuan: Pembuatan Spesifikasi Kebutuhan Perangkat Lunak (SKPL) yang dapat menggambarkan kebutuhan pengguna dan memberikan
+arah agar perancangannya benar>
+Tujuan
+<Perkenalkan perangkat lunak yang kebutuhan softwarenya ada pada dokumen ini. Gambarkan lingkup dari produk yang dicover oleh SKPL
+ini, khususnya jika gambaran SKPL hanya bagian dari sebuah sistem atau sub sistem>
+
+Ruang Lingkup Perangkat Lunak
+<Berikan gambaran singkat dari perangkat lunak yang akan dikembangkan, termasuk keuntungan, tujuan dan sasaran. Terangkan
+juga hubungan perangkat lunak dengan sasaran perusahaan atau strategi binis>
+
+Target Audience
+<Jelaskan siapa yang harus memahami dan menggunakan dokumen ini. Tunjukkan bagaimana perbedaan dari masing-masing audience
+tersebut dalam memperlakukan dokumen ini>
+
+Definisi, Istilah dan Singkatan
+Guna memberikan gambaran yang sama terhadap beberapa definisi, istilah dan singkatan yang digunakan di dokumen ini, perlu dijelaskan
+sebagaimana berikut:
+IEEE : Institute of Electrical and Electronics Engineers
+Adalah standart internasional untuk pengembang perangkat lunak
+SKPL : Spesifikasi Kebutuhan Perangkat Lunak atau
+SRS : Software Requirement Specification atau
+Adalah dokumen hasil analisis sebuah perangkat lunak yang berisi spesifikasi kebutuhan pengguna
