@@ -1,4 +1,12 @@
 DOKUMEN SPESIFIKASI KEBUTUHAN PERANGKAT LUNAK
+Abstrak:
+Indonesia merupakan negara yang kaya akan budaya dan wisata baharinya. Keberagaman tersebut menciptakan banyak komunitas yang bergerak 
+pada bidang kebudayaan. Namun, perkembangan teknologi yang semakin maju menyebabkan beberapa budaya di Indonesia tidak dikenali oleh
+masyarakat. Maka dari itu, komunitas-komunitas yang ada di Indonesia ini akan mengenalkan budaya-budaya di Indonesia kepada masyarakat 
+umum. Sebagai jembatan untuk mengenalkan budaya-budaya Indonesia salah satunya dengan menggunakan teknologi system informasi berbasis 
+web. Sistem informasi ini adalah Wisata Komunitas, dimana system ini bertujuan untuk memberikan informasi kepada masyarakat umum tentang 
+event yang akan datang di berbagai tempat. Sehingga masyarakat umum dapat mengetahui informasi event, kegiatan, komunitas dan wisata 
+dari daerah tersebut. 
 
 1. Pendahuluan
 <Tujuan: Pembuatan Spesifikasi Kebutuhan Perangkat Lunak (SKPL) yang dapat menggambarkan kebutuhan pengguna dan memberikan
