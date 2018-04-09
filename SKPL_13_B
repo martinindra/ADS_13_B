@@ -23,3 +23,17 @@ Adalah standart internasional untuk pengembang perangkat lunak
 SKPL : Spesifikasi Kebutuhan Perangkat Lunak atau
 SRS : Software Requirement Specification atau
 Adalah dokumen hasil analisis sebuah perangkat lunak yang berisi spesifikasi kebutuhan pengguna
+
+2. Deskripsi Umum
+Tentang Sistem Informasi
+Sistem Informasi ini digunakan untuk membantu dalam permasalahan untuk mempublikasi dan menginformasikan tentang event dan wisata dari 
+suatu daerah. Disisi lain juga terdapat masalah pada komunitas untuk menginformasikan dan merekrut anggota dari komunitas tersebut. 
+Sehingga dalam Sistem Informasi ini juga memiliki beberapa fungsionalitas yang dapat diandalkan yaitu adanya menu event dan menu 
+komunitas. Kedua menu tersebut berfungsi untuk mencari kebutuhan user dalam mencari informasi dari event atau kegiatan dan komunitas yang 
+mungkin untuk di ikuti. Disisi lain, kedua menu tersebut juga membantu pemerintah daerah untuk memantau dan mengawasi kegiatan dari 
+komunitas serta kegiatan agar sesuai dengan visi misi dari daerah serta mengenalkan daerah tersebut.
+
+Sistem ini dikelola oleh beberapa admin, dari tiap komunitas, admin dari pengembang, serta admin dari pemerintah. Fungsi dari admin tiap 
+komunitas adalah untuk memberikan informasi mengenai kegiatan dan komunitas tersebut. Sedangkan admin dari pengembang adalah untuk 
+melakukan pengawasan dan melihat perkembangan serta kesalahan – kesalahan yang terjadi di dalam sistem tersebut. Dan admin pemerintah 
+bertujuan untuk mengawasi kegiatan dari komunitas tersebut, serta menganalisis jumlah peminat dan wisatawan yang datang ke daerah tersebut.
