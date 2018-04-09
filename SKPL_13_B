@@ -9,11 +9,14 @@ event yang akan datang di berbagai tempat. Sehingga masyarakat umum dapat menget
 dari daerah tersebut. 
 
 1. Pendahuluan
-<Tujuan: Pembuatan Spesifikasi Kebutuhan Perangkat Lunak (SKPL) yang dapat menggambarkan kebutuhan pengguna dan memberikan
-arah agar perancangannya benar>
+Sistem informasi merupakan suatu kombinasi dari teknologi informasi dan aktivitas orang yang akan menunjang dalam berbagai operasi dan manajemen. 
+teknologi sistem informasi dapat menghubungkan ribuan informasi individual dan organisasi di seluruh dunia sehingga tekologi informasi begitu populer. Dengan adanya kecangihan teknologi informasi, 
+semia keterbatasan sarana, jarak dan waktu transaksi dapat teratasi dengan mudah. 
+Salah satu cotohnya adalah wisata komunitas yang menggunakan suatu sistem informasi untuk mengenalkan masyarakat di berbagai kegiatan dan suatu komunitas yang dapat terhubung dengan pemeritntah.
+
 Tujuan
-<Perkenalkan perangkat lunak yang kebutuhan softwarenya ada pada dokumen ini. Gambarkan lingkup dari produk yang dicover oleh SKPL
-ini, khususnya jika gambaran SKPL hanya bagian dari sebuah sistem atau sub sistem>
+Sistem informasi wisata komunitas ini dibangun dengan tujuan untuk memberikan informasi tentang kegiatan suatu komunitas yang berbentuk web. 
+Dalam sistem informasi ini dibutuhkan suatu software yang dapat menunjang jalanya aplikasi sistem informasi wisata komunitas ini. 
 
 Ruang Lingkup Perangkat Lunak
 <Berikan gambaran singkat dari perangkat lunak yang akan dikembangkan, termasuk keuntungan, tujuan dan sasaran. Terangkan
