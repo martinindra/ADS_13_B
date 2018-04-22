@@ -19,8 +19,11 @@ Sistem informasi wisata komunitas ini dibangun dengan tujuan untuk memberikan in
 Dalam sistem informasi ini dibutuhkan suatu software yang dapat menunjang jalanya aplikasi sistem informasi wisata komunitas ini. 
 
 Ruang Lingkup Perangkat Lunak
-<Berikan gambaran singkat dari perangkat lunak yang akan dikembangkan, termasuk keuntungan, tujuan dan sasaran. Terangkan
-juga hubungan perangkat lunak dengan sasaran perusahaan atau strategi binis>
+Wiskom atau Wisata Komunitas merupakan sebuah system informasi yang memberikan informasi mengenai event-event kebudayaan yang akan dilaksanakan pada suatu daerah. 
+Sistem informasi ini ditujukan untuk seluruh masyarakat Indonesia. Selain menyediakan informasi mengenai event yang akan dilaksanakan, Wiskom juga menyediakan informasi tentang komunitas-komunitas yang mengadakan event tersebut.
+Dengan adanya system informasi Wiskom ini masyarakat diharapkan lebih mengenali budaya-budaya yang dimiliki Indonesia. 
+Wiskom juga memberikan layanan untuk mempermudah sebuah komunitas dalam hal mengurus surat-surat dari pemerintah. 
+Sehingga diharapkan komunitas-komunitas yang ada di Indonesia bergabung pada Wiskom untuk mempermudah proses pelaksanaan event.
 
 Target Audience
 <Jelaskan siapa yang harus memahami dan menggunakan dokumen ini. Tunjukkan bagaimana perbedaan dari masing-masing audience
