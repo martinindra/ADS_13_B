@@ -51,3 +51,11 @@ Sistem ini dikelola oleh beberapa admin, dari tiap komunitas, admin dari pengemb
 komunitas adalah untuk memberikan informasi mengenai kegiatan dan komunitas tersebut. Sedangkan admin dari pengembang adalah untuk 
 melakukan pengawasan dan melihat perkembangan serta kesalahan – kesalahan yang terjadi di dalam sistem tersebut. Dan admin pemerintah 
 bertujuan untuk mengawasi kegiatan dari komunitas tersebut, serta menganalisis jumlah peminat dan wisatawan yang datang ke daerah tersebut.
+
+Karakteristik dan Klasifikasi Pengguna
+Aplikasi ini dirancang untuk seluruh kalangan, mulai dari kalangan muda hingga kalangaan tua. 
+Aplikasi ini dikelola oleh beberapa admin dari tiap komunitas, yaitu admin dari pengembang serta admin dari pemerintah.
+Admin pengembang mempunyai hak akses untuk melakukan pengawasan keamanan dan melihat kesalahan yang terjadi dalam sistem.
+Sedangkan admin pemerintah mempunyai akses untuk mengawasi kegiatan dari suatu komunitas, serta menganalisis jumlah peminat dan wisatawan
+yang datang dan berkunjung dalam suatu kegiatan komunitas tersebut. Admin tiap komunitas mempunyai hak akses untuk memberikan suatu informasi 
+mengenai kegiatan dan komunitas tersebut.
