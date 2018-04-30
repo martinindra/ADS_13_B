@@ -64,3 +64,11 @@ Sistem informasi ini dapat beroperasi di hp, tablet, laptop,  dan komputer. Untu
 android mulai dari jellybean hingga marshmellow, sedangkan untuk ios mulai dari ios 8 hingga ios 11.3. 
 Sedangkan untuk  spesifikasi laptop dan komputer minimal procecor intel, ios dengan memory RAM 2,00 GB.
 Aplikasi lain untuk mendukung dalam sistem informasi ini adalah aplikasi MySQL, Localhost, CorelDraw dan Bostrapp.
+
+Dokumentasi Bagi Pengguna
+Sistem ini memiliki beberapa komponen komponen yang dapat membantu user dalam melakukannya. Dalam sistem informasi ini terdapat menu
+event dan menu komunitas yang berfungsi untuk mencari kebutuhan user dalam mencari suatu informasi atau kegiatan yang terdapat dalam 
+komunitas. Disisi lain user yang ingin mendaftar sebagai komunitas tersebut cukup mengisi form yang tersedia dalam tampilan tersebut.
+Untuk bantuan yang diberikan dalam sistem ini sangat mudah dipahami oleh penggunanya hampir sama dengan sistem informasi yang sudah 
+ada sebelumnya.
+
