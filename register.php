@@ -1,37 +1,30 @@
 <?php
-    include'koneksi.php';
-    if(isset($_POST['register'])){
-        $fn = $_POST['firstname'];
-        $ln = $_POST['lastname'];
-        $name = $_POST['name'];
-        $users = $_POST['user'];
-        $passs = md5($_POST['pass']);
-        $messeg = "";
+include'koneksi.php';
+if(isset($_POST['register'])){
+    $fn = $_POST['firstname'];
+    $ln = $_POST['lastname'];
+    $name = $_POST['name'];
+    $users = $_POST['user'];
+    $passs = md5($_POST['pass']);
+    $date = date("Y/m/d");
+    $messeg = "";
 
-        if(empty($fn)||empty($ln)||empty($name)||empty($users) || empty($passs)) {
-            $messeg = "Username/Password con't be empty";
-        } else {
-            $sql = "INSERT INTO profile(FirstName,LastName,name,username,password,registration)values($fn,$ln,$name,$users,$passs,now()";
-            $stmt = $conn->prepare($sql);
-            $gapopo = array(
-                "name" => $name,
-                "FirstName" => $fn,
-                "LastName" => $ln,
-                "username" => $users,
-                "password" => $passs
-            );
-            $stmt->execute($gapopo);
-            
-            //$query->execute(array($name,$fn,$ln,$users,$passs));
-            //if($query === TRUE){
-                echo("<script type='text/javascript'>alert('Submit Success');</script>");
-                echo "<script type='text/javascript'> document.location ='login.php';</script>";
-            $stmt = null;
-            //}else{
-           //     echo("<script type='text/javascript'>alert('Submit ERROR!!!');</script>");
-            //}
+    if(empty($fn)||empty($ln)||empty($name)||empty($users) || empty($passs)) {
+        $messeg = "Username/Password con't be empty";
+    } else {
+        $sql = "INSERT INTO profile(FirstName, LastName, Name, username, password, registration, status ) values ('$fn','$ln','$name','$users','$passs','$date', 'user');";
+
+        if ($conn->query($sql)) {
+            echo("<script type='text/javascript'>alert('Submit Success');</script>");
+            echo "<script type='text/javascript'> document.location ='login.php';</script>";
         }
+        else {
+            echo("<script type='text/javascript'>alert('Submit Failed');</script>");
+            echo "<script type='text/javascript'> document.location ='register.php';</script>";
+        }
+        $conn = null;
     }
+}
 ?>
 <!DOCTYPE html>
 <html>
@@ -73,12 +66,12 @@
                     <div class="form-check"><label class="form-check-label"><input class="form-check-input" type="checkbox" required>I agree to the license terms.</label></div>
                 </div>
                 <div class="form-group"><button name="register" class="btn btn-primary btn-block" type="submit">Sign Up</button></div><a href="login.php" class="already">You already have an account? Login here.</a></form>
+            </div>
         </div>
-    </div>
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
-    <script src="assets/js/Simple-Slider1.js"></script>
-</body>
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
+        <script src="assets/js/Simple-Slider1.js"></script>
+    </body>
 
-</html>
+    </html>
