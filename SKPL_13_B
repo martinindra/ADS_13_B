@@ -38,6 +38,28 @@ SKPL : Spesifikasi Kebutuhan Perangkat Lunak atau
 SRS : Software Requirement Specification atau
 Adalah dokumen hasil analisis sebuah perangkat lunak yang berisi spesifikasi kebutuhan pengguna
 
+Sistem Penomoran
+Ada beberapa hal/bagian dalam dokumen ini yang perlu diberi nomor. Maksud penomoran ini untuk mempermudah audience dalam pengidentifikasian. Adapun aturan penomorannya sebagaimana tabel berikut:
+
+Profil	      :Nomor yang dibentuk pada id_profile merupakan id profil yang mana penomoranya berdasarkan auto increment dan dimulai dengan 1
+Event         :Nomor yang dibentuk pada id_profile merupakan id profil yang mana penomoranya berdasarkan auto increment dan dimulai dengan 1
+Komunitas	    :Nomor yang dibentuk pada id_profile merupakan id profil yang mana penomoranya berdasarkan auto increment dan dimulai dengan 1
+Anggota_Nama	:Nomor yang dibentuk pada id_profile merupakan id profil yang mana penomoranya berdasarkan id_Profil dan id_Komunitas
+Log	          :Nomor yang dibentuk pada id_profile merupakan id profil yang mana penomoranya berdasarkan auto increment dan dimulai dengan 1
+
+Kebutuhan Fungsional	
+	System dapat melakukan pencarian terhadap event yang akan dilaksanakan
+	System dapat melakukan pencarian terhadap suatu komunitas
+	System dapat me-record data kegiatan yang akan, sedang, ataupun telah dilaksanakan selama 1 tahun
+	System dapat menampilkan informasi mengenai event yang akan dilaksanakan
+	System dapat menampilkan informasi mengenai komunitas
+Kebutuhan Non Fungsional	
+	System dapat dijalankan di seluruh web browser
+	System menggunakan tampilan web responsive
+	System harus dapat me-record data kegiatan maupun komunitas
+	System harus dapat dibuka di seluruh device (yang memiliki web browser)
+	Hanya admin yang dapat melakukan perubahan data
+
 2. Deskripsi Umum
 Tentang Sistem Informasi
 Sistem Informasi ini digunakan untuk membantu dalam permasalahan untuk mempublikasi dan menginformasikan tentang event dan wisata dari 
@@ -60,10 +82,32 @@ Sedangkan admin pemerintah mempunyai akses untuk mengawasi kegiatan dari suatu k
 yang datang dan berkunjung dalam suatu kegiatan komunitas tersebut. Admin tiap komunitas mempunyai hak akses untuk memberikan suatu informasi 
 mengenai kegiatan dan komunitas tersebut.
 
+Lingkungan Operasi
 Sistem informasi ini dapat beroperasi di hp, tablet, laptop,  dan komputer. Untuk hp, dan tablet minimal memiliki versi sistem operasi
 android mulai dari jellybean hingga marshmellow, sedangkan untuk ios mulai dari ios 8 hingga ios 11.3. 
 Sedangkan untuk  spesifikasi laptop dan komputer minimal procecor intel, ios dengan memory RAM 2,00 GB.
 Aplikasi lain untuk mendukung dalam sistem informasi ini adalah aplikasi MySQL, Localhost, CorelDraw dan Bostrapp.
+
+Batasan Desain dan Implementasi
+1.	System Request ( Sistem Informasi Wisata Komunitas)
+No	Elemen	Uraian
+1.	Project Sponsor	Terdapat 2 fokus dalam Project Sponsor, yaitu : 
+  •	Pemerintah Kota (Dinas Perhubungan dan Dinas Pariwisata)
+  •	Pemilik Komunitas
+2.	Business Needs	
+  •	Membantu dalam mengenalkan sebuah komunitas maupun acara yang dimiliki suatu kota atau kabupaten kepada masyarakat umum
+  •	Membantu pemilik acara(komunitas) dalam mengurus surat menyurat pada pemerintah dengan adanya bukti informasi event pada sistem informasi yang telah diupdate
+  •	Mengurangi atau menghapus sebuah komunitas yang kurang bermanfaat ataupun yang sudah tidak beroperasi
+3.	Business Requeriements	
+  •	Informasi pada event maupun komunitas dapat membantu Pemerintah Kota dalam melakukan pengawasan yang terjadi di dalam kota tersebut
+  •	Informasi tanggal, legalitas, dan kesiapan acara pada sistem tersebut
+  •	Fasilitas pencarian event yang akan dilaksanakan
+  •	Fasilitas pencarian komunitas
+4.	Business Value	
+  •	Memberi Informasi yang dibutuhkan oleh masyarakat mengenai event yang akan dilaksanakan
+  •	Memberikan informasi komunitas kepada masyarakat luas
+  •	Meningkatkan tingkat wisatawan domestik mupun mancanegara
+5.	Special Issues	System dibangun berdasrkan teknologi web responsive
 
 Dokumentasi Bagi Pengguna
 Sistem ini memiliki beberapa komponen komponen yang dapat membantu user dalam melakukannya. Dalam sistem informasi ini terdapat menu
@@ -73,7 +117,6 @@ Untuk bantuan yang diberikan dalam sistem ini sangat mudah dipahami oleh penggun
 ada sebelumnya.
 
 3. Kebutuhan Antarmuka Eksternal
-
 Antarmuka pengguna
 Untuk mock-up dapat diakses dan dilihat pada https://drive.google.com/open?id=1KzMKyXgluN1TOGU61bkkuEEXbJviAbop untuk halaman login.
 https://drive.google.com/open?id=1y1aVyx4lBjteLpGOBZesXJu0FIXxUvgk untuk halaman utama. 
