@@ -1,27 +1,25 @@
 <?php
-    include'koneksi.php';
-    if(isset($_POST['login'])){
-        $users = $_POST['user'];
-        $passs = md5($_POST['pass']);
-        $messeg = "";
+include'koneksi.php';
+if(isset($_POST['login'])){
+    $admin = $conn->prepare('SELECT * FROM profile WHERE username = :username and password = :password');
+    $admin->execute(array(
+        ':username' => $_POST['username'],
+        'password' => md5($_POST['password'])
+    ));
+    $row = $admin->fetch(PDO::FETCH_ASSOC);
 
-        if(empty($users) || empty($passs)) {
-            $messeg = "Username/Password con't be empty";
-        } else {
-            $sql = "SELECT username, password FROM profile WHERE username='$_POST[user]' AND password='$_POST[pass]'";
-            $query = $conn->prepare($sql);
-            $query->execute(array($users,$passs));
-            if($query->rowCount() >= 1) {
-                $_SESSION['user'] = $users;
-                echo("<script type='text/javascript'>alert('Login Succes');</script>");
-                echo "<script type='text/javascript'> document.location ='index.php';</script>";
-            } else {
-                $messeg = "Username/Password is wrong";
-            }
-        }
+    if(empty($row['username'])){
+        echo("<script type='text/javascript'>alert('Your Login Name or Password is invalid');</script>");
+        echo "<script type='text/javascript'> document.location ='login.php';</script>";
+    }else {
+
+        $_SESSION['user'] = $_POST['username'];
+        echo("<script type='text/javascript'>alert('Login Success');</script>");
+        echo "<script type='text/javascript'> document.location ='index.php';</script>";
     }
-
+}
 ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -54,14 +52,14 @@
         </form>
         <form method="post" style="padding:18px;height:227px;">
             <h2 class="sr-only">Login Form</h2>
-            <div class="form-group"><input class="form-control" type="text" name="user" placeholder="Username" required></div>
-            <div class="form-group"><input class="form-control" type="password" name="pass" placeholder="Password" required></div>
+            <div class="form-group"><input class="form-control" type="text" name="username" placeholder="Username" required></div>
+            <div class="form-group"><input class="form-control" type="password" name="password" placeholder="Password" required></div>
             <div class="form-group"><button name="login" class="btn btn-primary btn-block" type="submit">Log In</button></div><a href="register.php" class="forgot" style="margin:8px;padding:-56px;">Don't Have Account? Click Here</a></form>
-    </div>
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
-    <script src="assets/js/Simple-Slider1.js"></script>
-</body>
+        </div>
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
+        <script src="assets/js/Simple-Slider1.js"></script>
+    </body>
 
-</html>
+    </html>
