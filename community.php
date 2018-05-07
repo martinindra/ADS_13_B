@@ -121,7 +121,7 @@ include('koneksi.php');
                     $tanggal = "";
                     $tempat = "";
                     $deskripsi = "";
-                    $sql2 = "SELECT nama_event, tanggal, tempat, deskripsi FROM event WHERE id_kom = '$id_kom'";
+                    $sql2 = "SELECT e.nama_event, e.tanggal, e.tempat, e.deskripsi FROM event e, komunitas k WHERE k.id_kom = $id_kom and k.nama_kom = e.penyedia";
                     $query2 = $conn->prepare($sql2);
                     $neo2 = array(
                         'nama_event' => $nama_event,
