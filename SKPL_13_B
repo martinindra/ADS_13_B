@@ -1,4 +1,14 @@
 DOKUMEN SPESIFIKASI KEBUTUHAN PERANGKAT LUNAK
+SISTEM INFORMASI WISATA KOMUNITAS
+
+PP11-Wiskom
+10 April 2018
+
+Disiapkan :
+M. Fajar Bina Nugroho ( 15053560
+Martin Indra Wisnu Prabowo  (15053560
+Nella Ayu Ambarwati ( 150535601730 )
+
 Abstrak:
 Indonesia merupakan negara yang kaya akan budaya dan wisata baharinya. Keberagaman tersebut menciptakan banyak komunitas yang bergerak 
 pada bidang kebudayaan. Namun, perkembangan teknologi yang semakin maju menyebabkan beberapa budaya di Indonesia tidak dikenali oleh
@@ -26,8 +36,10 @@ Wiskom juga memberikan layanan untuk mempermudah sebuah komunitas dalam hal meng
 Sehingga diharapkan komunitas-komunitas yang ada di Indonesia bergabung pada Wiskom untuk mempermudah proses pelaksanaan event.
 
 Target Audience
-<Jelaskan siapa yang harus memahami dan menggunakan dokumen ini. Tunjukkan bagaimana perbedaan dari masing-masing audience
-tersebut dalam memperlakukan dokumen ini>
+Dokumen ini harus dipahami oleh pengguna dan pembangun sistem informasi. Pengguna sebagai komunitas dapat mengetahui cara kerja
+sistem yang telah dibuat untuk mengolah data komunitasnya, pengguna sebagai masyrakat umum dapat mengetahui cara kerja sistem untuk 
+mengetahui informasi yang diberikan, pengguna sebagai pemerintah dapat memahami cara kerja sistem untuk perizinan event yang akan dilaksanakan.
+Pembangun sisem dapat mengetahui kebutuhan sistem agar dapat membuat perancangan sistem dengan tepat dan benar.
 
 Definisi, Istilah dan Singkatan
 Guna memberikan gambaran yang sama terhadap beberapa definisi, istilah dan singkatan yang digunakan di dokumen ini, perlu dijelaskan
@@ -69,6 +81,7 @@ komunitas. Kedua menu tersebut berfungsi untuk mencari kebutuhan user dalam menc
 mungkin untuk di ikuti. Disisi lain, kedua menu tersebut juga membantu pemerintah daerah untuk memantau dan mengawasi kegiatan dari 
 komunitas serta kegiatan agar sesuai dengan visi misi dari daerah serta mengenalkan daerah tersebut.
 
+Fungsi-fungsi perangkat lunak
 Sistem ini dikelola oleh beberapa admin, dari tiap komunitas, admin dari pengembang, serta admin dari pemerintah. Fungsi dari admin tiap 
 komunitas adalah untuk memberikan informasi mengenai kegiatan dan komunitas tersebut. Sedangkan admin dari pengembang adalah untuk 
 melakukan pengawasan dan melihat perkembangan serta kesalahan – kesalahan yang terjadi di dalam sistem tersebut. Dan admin pemerintah 
@@ -83,10 +96,10 @@ yang datang dan berkunjung dalam suatu kegiatan komunitas tersebut. Admin tiap k
 mengenai kegiatan dan komunitas tersebut.
 
 Lingkungan Operasi
-Sistem informasi ini dapat beroperasi di Smartphone, laptop dan komputer. Untuk hp, dan tablet minimal memiliki versi sistem operasi
+Sistem informasi ini dapat beroperasi di hp, tablet, laptop,  dan komputer. Untuk hp, dan tablet minimal memiliki versi sistem operasi
 android mulai dari jellybean hingga marshmellow, sedangkan untuk ios mulai dari ios 8 hingga ios 11.3. 
 Sedangkan untuk  spesifikasi laptop dan komputer minimal procecor intel, ios dengan memory RAM 2,00 GB.
-Aplikasi lain untuk mendukung dalam sistem informasi ini adalah aplikasi Xampp,MySQL, Localhost, CorelDraw dan Bostrapp.
+Aplikasi lain untuk mendukung dalam sistem informasi ini adalah aplikasi MySQL, Localhost, CorelDraw dan Bostrapp.
 
 Batasan Desain dan Implementasi
 1.	System Request ( Sistem Informasi Wisata Komunitas)
@@ -131,14 +144,42 @@ dengan adanya suatu sistem informasi berbasis web tersebut kita menggunakan sepe
 keras seperti komputer, laptop serta perangkat pendukung koneksi internet. Kontrol interaksi yang terdapat dalam perangkat lunak dan perangkat 
 keras saling sejalan karna software yang digunakan sangat mudah dalam pengaplikasinya terhadap hardware.
 
-4. Feature Sistem
-Dalam Sistem informasi wisata komunitas ini dibutuhkan pengelompokan featur fungsional yang dapat akses dan dilihat pada use case dibawah ini
-https://drive.google.com/file/d/1d2sp-T5hSawyKV6WrOtyvXeKLb1ne3cI/view?usp=sharing
+Antarmuka perangkat lunak
+a. Database MySQL
+b. Bostrapp
 
-5. Kebutuhan NonFungsional Lainnya
-Kebutuhan Keamanan
-Dalam segi kebutuhan keamana sangat aman karna sistem informasi ini diekolola oleh beberapa admin dari tiap komunitas, admin dari pengembang, 
-serta admin dari pemerintah. Jika terjadi kesalahan yang dilakukan oleh admin komunitas dan admin pemerintah dalam melakukan informasi masih 
-bisa kita benarkan oleh admin pengembang karna admin pengembang adalah sebagai validitas penguploadan ke sistem informasi web tersebut. 
-Jadi kemungkinan kesalahan yang diakabatkan oleh admin komunitas atau admin pemerintah bisa dicegah dengan cepat sehingga pengunjung yang akan 
-melihat informasi tetang wisata komunitas itu tidak salah.
+Antarmuka komunikasi
+a. WiFi
+b. Kabel LAN UTP RJ-45
+
+Kebutuhan Fungsional
+Diagram Konteks
+
+DFD Level
+
+Spesifikasi Proses
+- sistem informasi dapat menampilkan form login
+- sistem informasi dapat menampilkan form register
+- sistem informasi dapat menampilkan halaman website sesuai dengan akun yang terdaftar (masyarakat umum, komunitas, pemerintah)
+- sistem informasi dapat menampilkan halaman event yang akan dilaksanakan (untuk masyarakat umum)
+- sistem informasi dapat menampilkan halaman info komunitas (untuk masyarakat umum)
+- sistem informasi dapat menyimpan perubahan data informasi komunitas ( untuk komunitas )
+- sistem informasi dapat menyediakan fitur untuk kemudahan surat perizinan untuk event yang akan diselenggarakan ( untuk komunitas )
+- sistem informasi dapat memberikan akses penerimaan data komunitas perihal surat perizinan menyelenggarakan event( untuk pemerintah )
+
+Data Store
+user : berisi dekripsi tentang pengguna yang dapat menggunakan sistem informasi ini (masyarakat umum, komunitas dan pemerintah), dekripsi 
+user dapat berupa email, password, dll.
+event : merupakan dekripsi acara yang akan diselenggarakan pada tempat wisata atau daerah tertentu
+
+Kebutuhan Data
+
+
+Batasan Perancangan
+Tampilan web dibuat dengan menggunakan Corel Draw, AdobeIlustrator
+Menggunakan bahasa pemrograman PHP, HTML dan MySQL
+Text editor menggunakan Sublime Text
+
+
+
+
