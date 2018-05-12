@@ -83,10 +83,10 @@ yang datang dan berkunjung dalam suatu kegiatan komunitas tersebut. Admin tiap k
 mengenai kegiatan dan komunitas tersebut.
 
 Lingkungan Operasi
-Sistem informasi ini dapat beroperasi di hp, tablet, laptop,  dan komputer. Untuk hp, dan tablet minimal memiliki versi sistem operasi
+Sistem informasi ini dapat beroperasi di Smartphone, laptop dan komputer. Untuk hp, dan tablet minimal memiliki versi sistem operasi
 android mulai dari jellybean hingga marshmellow, sedangkan untuk ios mulai dari ios 8 hingga ios 11.3. 
 Sedangkan untuk  spesifikasi laptop dan komputer minimal procecor intel, ios dengan memory RAM 2,00 GB.
-Aplikasi lain untuk mendukung dalam sistem informasi ini adalah aplikasi MySQL, Localhost, CorelDraw dan Bostrapp.
+Aplikasi lain untuk mendukung dalam sistem informasi ini adalah aplikasi Xampp,MySQL, Localhost, CorelDraw dan Bostrapp.
 
 Batasan Desain dan Implementasi
 1.	System Request ( Sistem Informasi Wisata Komunitas)
