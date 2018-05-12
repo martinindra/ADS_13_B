@@ -152,6 +152,18 @@ Antarmuka komunikasi
 a. WiFi
 b. Kabel LAN UTP RJ-45
 
+4. Feature Sistem
+Dalam Sistem informasi wisata komunitas ini dibutuhkan pengelompokan featur fungsional yang dapat akses dan dilihat pada use case dibawah ini
+https://drive.google.com/file/d/1d2sp-T5hSawyKV6WrOtyvXeKLb1ne3cI/view?usp=sharing
+
+5. Kebutuhan NonFungsional Lainnya
+Kebutuhan Keamanan
+Dalam segi kebutuhan keamana sangat aman karna sistem informasi ini diekolola oleh beberapa admin dari tiap komunitas, admin dari pengembang, 
+serta admin dari pemerintah. Jika terjadi kesalahan yang dilakukan oleh admin komunitas dan admin pemerintah dalam melakukan informasi masih 
+bisa kita benarkan oleh admin pengembang karna admin pengembang adalah sebagai validitas penguploadan ke sistem informasi web tersebut. 
+Jadi kemungkinan kesalahan yang diakabatkan oleh admin komunitas atau admin pemerintah bisa dicegah dengan cepat sehingga pengunjung yang akan 
+melihat informasi tetang wisata komunitas itu tidak salah.
+
 Kebutuhan Fungsional
 Diagram Konteks
 
