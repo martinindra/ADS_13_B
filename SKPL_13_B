@@ -186,9 +186,6 @@ user : berisi dekripsi tentang pengguna yang dapat menggunakan sistem informasi 
 user dapat berupa email, password, dll.
 event : merupakan dekripsi acara yang akan diselenggarakan pada tempat wisata atau daerah tertentu
 
-Kebutuhan Data
-
-
 Batasan Perancangan
 Tampilan web dibuat dengan menggunakan Corel Draw, AdobeIlustrator
 Menggunakan bahasa pemrograman PHP, HTML dan MySQL
